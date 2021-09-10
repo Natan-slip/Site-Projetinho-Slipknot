@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+--primary-color: #d50000;
+--dark-color: #9b0000;
+--light-color: #ff5131;
+}
+
+.containerAll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+          
+    background-color: black;
+    color: white;
+}
+
+.container {
+    background-color: var(--primary-color);
+    width: 1080px;
+    height: 1500px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerSeach{
+    width: 1080px;
+    height: 80px;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+}
+
+.containerImg{
+    width: 100%;
+    height: 80px;
+    background-image: url(../img/logo2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form input, form button {
+    width: 220px;
+    height: 18px;
+    font-size: 17px;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+    margin-top: 25px;
+}    
+
+form button {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    background: none;
+    color: whitesmoke;
+}
+
+form button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.containerIcon_gif{
+    width: 1000px;
+    height: 410px;
+    background-image: url("../img/banner4.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    margin-top: 20px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    border-radius: 5px;
+    margin-left: 350px;
+    margin-top: 80px;
+    position: center;
+    animation:spin 7s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.containerMenu{
+    width: 1000px;
+    height: 80px;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#caixaMenu{
+    width: 500px;
+    height: 60px;
+    padding-top: 5px;
+}
+
+#menu{
+    width: 600px;
+    height: 50px;
+}
+
+.menuItem{
+    width: 120px;
+    height: 35px;
+    float: left; /*Permite deixar os itens na horizontal*/
+    list-style: none;
+    color: #ffffff;
+    text-align: center;
+    font-family: verdana;
+    font-size: 1em;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.menuItem:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.submenu{
+    width: 120px;
+    height: 250px;
+    background-color: red;
+    margin-top: 15px;
+    display: none;
+    border-radius: 15px;
+}
+
+.submenuItem{
+    width: 120px;
+    height: 35px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+    font-family: cursive;
+    font-size: 1em;
+    border-radius: 15px
+ }
+
+.submenuItem:hover{
+    background-color: var(--dark-color);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.menuItem:hover > .submenu{
+    display: block;
+}
+
+.containerProdutc{
+    width: 1050px;
+    height: 850px;
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerBox{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    margin-left: 75px;
+    margin-right: auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imgLinks{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 241px;
+}
